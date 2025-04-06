@@ -1,9 +1,14 @@
 function changeColor() {
   let body = document.querySelector("body");
-  let backGroundColor = body.style.backgroundColor;
-  if (backGroundColor === "white") {
+  if (body.style.backgroundColor === "white") {
     body.style.backgroundColor = "blue";
-  } else {
+  } else if (body.style.backgroundColor === "blue") {
     body.style.backgroundColor = "green";
+  } else if (body.style.backgroundColor === "green") {
+    body.style.backgroundColor = "pink";
+  } else if (body.style.backgroundColor === "pink") {
+    body.style.backgroundColor = "yellow";
+  } else {
+    body.style.backgroundColor = "white";
   }
 }
